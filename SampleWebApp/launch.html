@@ -7,6 +7,10 @@
     <body>
         Loading...
         <script>
+             FHIR.oauth2.authorize({
+        'client_id': '1e56107a-17c2-43eb-928b-844c2b06685c',
+        'scope':  'patient/Patient.read patient/Observation.read user/Practitioner.read launch online_access openid profile email'
+      });
         // Change this to the ID of the client that you registered with the SMART on FHIR authorization server.
         var clientId = "1e56107a-17c2-43eb-928b-844c2b06685c";
         
